@@ -33,5 +33,13 @@ public class TicTacToeTest {
 		assertEquals("X123O5678", ttt.moveXO('O', 4));
 		assertEquals("X12XO5678", ttt.moveXO('X', 3));
 	}
+	
+	@Test
+	public void testCheckForOutOfBounds() throws Exception
+	{
+		TicTacToeMain ttt = new TicTacToeMain();
+		assertFalse(ttt.checkForOutOfBounds(69));
+		assertTrue(ttt.checkForOutOfBounds(5));
+	}
 
 }

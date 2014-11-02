@@ -9,7 +9,6 @@ public class TicTacToeMain
 	private Grid grid = new Grid();
 	public String moveXO(char XO, int index)
 	{
-<<<<<<< HEAD
 		if(checkForOutOfBounds(index))
 		{
 			grid.Board[index] = XO;
@@ -30,9 +29,6 @@ public class TicTacToeMain
 	
 	public static void main(String[] arguments)
 	{
-
-=======
-		System.out.println("Hello world");
->>>>>>> 322728faa680b82c72a3278a38a2e2c0930e9b73
+		
 	}
 }
