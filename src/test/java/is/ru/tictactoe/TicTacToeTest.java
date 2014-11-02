@@ -19,7 +19,7 @@ public class TicTacToeTest {
 	@Test
 	public void testMove() throws Exception
 	{
-		TicTacToeMain ttt = new TicTacToeMain();
+		TicTacToe ttt = new TicTacToe();
 		assertEquals("0123X5678", ttt.moveXO('X', 4));
 		assertEquals("0O23X5678", ttt.moveXO('O', 1));
 		assertEquals("XO23X5678", ttt.moveXO('X', 0));
@@ -28,7 +28,7 @@ public class TicTacToeTest {
 	@Test
 	public void testMove2() throws Exception
 	{
-		TicTacToeMain ttt = new TicTacToeMain();
+		TicTacToe ttt = new TicTacToe();
 		assertEquals("X12345678", ttt.moveXO('X', 0));
 		assertEquals("X123O5678", ttt.moveXO('O', 4));
 		assertEquals("X12XO5678", ttt.moveXO('X', 3));
@@ -37,7 +37,7 @@ public class TicTacToeTest {
 	@Test
 	public void testCheckForOutOfBounds() throws Exception
 	{
-		TicTacToeMain ttt = new TicTacToeMain();
+		TicTacToe ttt = new TicTacToe();
 		assertFalse(ttt.checkForOutOfBounds(69));
 		assertTrue(ttt.checkForOutOfBounds(5));
 	}
@@ -55,9 +55,20 @@ public class TicTacToeTest {
 	@Test
 	public void testIsX() throws Exception
 	{
-		assertTrue(new TicTacToe().isX(true);
-		assertFalse(new TicTacToe().isX(false);
+		assertTrue(new TicTacToe().isX(true));
+		assertFalse(new TicTacToe().isX(false));
 	}
 
-
+	@Test
+	public void testTicTacToeConstructor() throws Exception
+	{
+		TicTacToe ttt = new TicTacToe();
+		assertEquals("012345678", ttt.grid.toString());
+	}
+	
+	@Test
+	public void testOverride() throws Exception
+	{
+		assertTrue(new TicTacToe().override(5, "01234X678"));
+	}
 }
