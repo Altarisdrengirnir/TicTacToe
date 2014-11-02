@@ -2,9 +2,14 @@ package is.ru.tictactoe;
 
 public class TicTacToeMain {
 
-	public int returnOne()
+	public static void main(String[] arguments)
 	{
-		return 1;
+		
+	}
+
+	public static int returnOne(int a)
+	{
+		return a;
 	}
 
 }

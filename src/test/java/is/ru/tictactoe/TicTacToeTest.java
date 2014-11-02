@@ -10,7 +10,7 @@ public class TicTacToeTest {
     }
 	@Test
 	public void testNumberOne(){
-		assertEquals(1, returnOne());
+		assertEquals(1, TicTacToeMain.returnOne(1));
 	}	
 	/*
 	@Test
