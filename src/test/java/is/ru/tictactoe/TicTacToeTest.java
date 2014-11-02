@@ -79,4 +79,11 @@ public class TicTacToeTest {
 		ttt.moveXO('X', 23);
 		ttt.moveXO('O', 100);
 	}
+	
+	@Test(expected=Exception.class)
+	public void testOverride fails()
+	{
+		TicTacToe ttt = new TicTacToe();
+		ttt.override(5, "01234X678");
+	}	
 }
