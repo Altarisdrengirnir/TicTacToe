@@ -51,6 +51,13 @@ public class TicTacToeTest {
 		assertTrue(new TicTacToe().checkForWinner("O123O567O"));
 		assertFalse(new TicTacToe().checkForWinner("012345678"));
 	}
+	
+	@Test
+	public void testIsX() throws Exception
+	{
+		assertTrue(new TicTacToe().isX(true);
+		assertFalse(new TicTacToe().isX(false);
+	}
 
 
 }

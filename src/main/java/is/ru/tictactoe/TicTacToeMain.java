@@ -7,6 +7,7 @@ public class TicTacToeMain
  {
 	
 	private Grid grid = new Grid();
+	private boolean isX = true;
 	public String moveXO(char XO, int index)
 	{
 		if(checkForOutOfBounds(index))
@@ -65,6 +66,20 @@ public class TicTacToeMain
 			return true;
 		}
 		return false;
+	}
+	
+	public boolean isX(boolean isX)
+	{
+		if(isX)
+		{
+			isX = false;
+			return true;
+		}
+		else
+		{
+			isX = true;
+			return false;	
+		}
 	}
 	
 	public static void main(String[] arguments)
