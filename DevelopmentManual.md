@@ -10,6 +10,7 @@ What do you need
 [here](https://windows.github.com).
 
 * Java Development Kit.
+    * sudo apt-get install openjdk-7-jdk
 
 Getting started
 ---------------
