@@ -8,7 +8,10 @@ public class TicTacToeTest {
 	public static void main(String args[]) {
       org.junit.runner.JUnitCore.main("is.ru.tictactoe.TicTacToeTest");
     }
-	
+	@Test
+	public void testNumberOne(){
+		assertEquals(1, returnOne());
+	}	
 	/*
 	@Test
 	public void testNumberOne() {
