@@ -3,19 +3,18 @@ package is.ru.tictactoe;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
-public class TicTacToeTest {
-
-	public static void main(String args[]) {
-      org.junit.runner.JUnitCore.main("is.ru.tictactoe.TicTacToeTest");
-    }
-	@Test
-	public void testNumberOne(){
-		assertEquals(1, returnOne());
-	}	
-	/*
-	@Test
-	public void testNumberOne() {
-		assertEquals(expected, test());
+public class TicTacToeTest
+{
+	
+	public static void main(String args[])
+	{
+	      org.junit.runner.JUnitCore.main("tictactoe.TicTacToeTest");
 	}
-	*/
+	
+	@Test
+	public void testEmptyBoard() throws Exception
+	{
+		Grid grid = new Grid();
+		assertEquals("012345678", grid.toString());
+	}
 }
