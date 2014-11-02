@@ -85,5 +85,7 @@ public class TicTacToeTest {
 	{
 		TicTacToe ttt = new TicTacToe();
 		ttt.override(5, "01234X678");
+		ttt.override(5, "XXXXXXXXX");
+		ttt.override(0, "O12345678");
 	}	
 }
