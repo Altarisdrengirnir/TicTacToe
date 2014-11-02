@@ -42,3 +42,9 @@ The following should help you make gradle faster.
 
 * mkdir ~/.gradle
 echo "org.gradle.daemon=true" >> ~/.gradle/gradle.properties
+
+Install Travis
+--------------
+
+* You can go to this [wibside](http://docs.travis-ci.com/user/languages/java/) and set the
+* programing language to Java and choose OpenJDK7
