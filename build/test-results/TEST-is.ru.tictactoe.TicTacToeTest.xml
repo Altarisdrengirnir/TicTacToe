@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.tictactoe.TicTacToeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2014-11-02T10:19:26" hostname="i-8eae37da" time="0.005">
-  <properties/>
-  <testcase name="testEmptyBoard" classname="is.ru.tictactoe.TicTacToeTest" time="0.005"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
