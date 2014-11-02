@@ -19,7 +19,7 @@ To install git you need to do the following:
 * sudo apt-get install git
 * Clone this repository
 
-Instal Java Development Kit
+Install Java Development Kit
 ---------------------------
 
 To install java 1.7.0 you need to do the following
@@ -36,3 +36,9 @@ is by default when you do apt-get gradle
 * sudo add-apt-repository ppa:cwchien/gradle
 * sudo apt-get update
 * sudo apt-get install gradle
+
+We found out that Gradel is not the fastest program in the world.
+The following should help you make gradle faster.
+
+* mkdir ~/.gradle
+echo "org.gradle.daemon=true" >> ~/.gradle/gradle.properties
