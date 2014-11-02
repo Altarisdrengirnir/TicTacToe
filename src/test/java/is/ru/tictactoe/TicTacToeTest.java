@@ -1,6 +1,9 @@
 package is.ru.tictactoe;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
 
 public class TicTacToeTest {
@@ -35,14 +38,6 @@ public class TicTacToeTest {
 	}
 	
 	@Test
-	public void testCheckForOutOfBounds() throws Exception
-	{
-		TicTacToe ttt = new TicTacToe();
-		assertFalse(ttt.checkForOutOfBounds(69));
-		assertTrue(ttt.checkForOutOfBounds(5));
-	}
-
-	@Test
 	public void testCheckForWinner() throws Exception
 	{
 		assertTrue(new TicTacToe().checkForWinner("XXX345OO8"));
@@ -52,24 +47,11 @@ public class TicTacToeTest {
 		assertFalse(new TicTacToe().checkForWinner("012345678"));
 	}
 	
-	@Test
-	public void testIsX() throws Exception
-	{
-		assertTrue(new TicTacToe().isX(true));
-		assertFalse(new TicTacToe().isX(false));
-	}
-
-	@Test
-	public void testTicTacToeConstructor() throws Exception
-	{
-		TicTacToe ttt = new TicTacToe();
-		assertEquals("012345678", ttt.grid.toString());
-	}
 	
 	@Test
 	public void testOverride() throws Exception
 	{
-		assertTrue(new TicTacToe().override(5, "01234X678"));
+		assertFalse(new TicTacToe().override(5, "0123X5678"));
 	}
 
 	@Test(expected=Exception.class)
@@ -88,13 +70,6 @@ public class TicTacToeTest {
 		ttt.override(5, "XXXXXXXXX");
 		ttt.override(0, "O12345678");
 	}	
-	
-	@Test
-	public void testTicTacToeConstructor()
-	{
-		TicTacToe ttt = new TicTacToe();
-		assertEquals("012345678", ttt.grid.toString());
-	}
 	
 	@Test
 	public void testMorewinners()
