@@ -88,4 +88,22 @@ public class TicTacToeTest {
 		ttt.override(5, "XXXXXXXXX");
 		ttt.override(0, "O12345678");
 	}	
+	
+	@Test
+	public void testTicTacToeConstructor()
+	{
+		TicTacToe ttt = new TicTacToe();
+		assertEquals("012345678", ttt.grid.toString());
+	}
+	
+	@Test
+	public void testMorewinners()
+	{	
+		assertTrue(new TicTacToe().checkForWinner("X1XOOO6X8"));
+		assertTrue(new TicTacToe().checkForWinner("O12O45O78"));
+		assertFalse(new TicTacToe().checkForWinner("OXOXO5678"));
+	}
+
+	@Test
+	public void test
 }
