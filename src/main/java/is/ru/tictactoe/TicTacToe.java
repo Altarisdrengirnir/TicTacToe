@@ -36,7 +36,7 @@ public class TicTacToe
                 return grid.toString();
         }
 
-        private boolean checkForOutOfBounds(int x)
+        public boolean checkForOutOfBounds(int x)
         {
                 if(x < 0 || x > 8)
                 {
