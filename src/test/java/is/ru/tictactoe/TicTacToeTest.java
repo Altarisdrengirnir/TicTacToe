@@ -42,4 +42,15 @@ public class TicTacToeTest {
 		assertTrue(ttt.checkForOutOfBounds(5));
 	}
 
+	@Test
+	public void testCheckForWinner() throws Exception
+	{
+		assertTrue(new TicTacToe().checkForWinner("XXX345OO8"));
+		assertFalse(new TicTacToe().checkForWinner("012345678"));
+		assertTrue(new TicTacToe().checkForWinner("012OOO678"));
+		assertTrue(new TicTacToe().checkForWinner("O123O567O"));
+		assertFalse(new TicTacToe().checkForWinner("012345678"));
+	}
+
+
 }
