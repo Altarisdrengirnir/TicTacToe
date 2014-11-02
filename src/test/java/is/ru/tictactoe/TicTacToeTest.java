@@ -71,4 +71,12 @@ public class TicTacToeTest {
 	{
 		assertTrue(new TicTacToe().override(5, "01234X678"));
 	}
+
+	@Test(expected=Exception.class)
+	public void testToLargeInput()
+	{
+		TicTacToe ttt = new TicTacToe();
+		ttt.moveXO('X', 23);
+		ttt.moveXO('O', 100);
+	}
 }
