@@ -81,7 +81,7 @@ public class TicTacToeTest {
 	}
 	
 	@Test(expected=Exception.class)
-	public void testOverride fails()
+	public void testOverridefails()
 	{
 		TicTacToe ttt = new TicTacToe();
 		ttt.override(5, "01234X678");
@@ -103,7 +103,4 @@ public class TicTacToeTest {
 		assertTrue(new TicTacToe().checkForWinner("O12O45O78"));
 		assertFalse(new TicTacToe().checkForWinner("OXOXO5678"));
 	}
-
-	@Test
-	public void test
 }
