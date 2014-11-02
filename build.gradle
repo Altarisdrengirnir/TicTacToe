@@ -56,7 +56,7 @@ dependencies {
 mainClassName = "is.ru.tictactoe.TicTacToe"
 
 run{standardInput = System.in}
-/*
+
 task stage { 
 	dependsOn installApp
-}*/
+}
