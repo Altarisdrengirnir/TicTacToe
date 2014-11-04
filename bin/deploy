@@ -1,12 +1,8 @@
 #!/bin/bash
 
-./gradlew installApp
+echo "Deploying software..."
 
-mkdir -p ~/game
-
-for file in ~/TicTacToe/build/install/TicTacToe/*
-do	
-cp -r "$file" "$pwd"
-done
-
-
+./bin/clean
+./bin/build
+./bin/check
+./bin/install

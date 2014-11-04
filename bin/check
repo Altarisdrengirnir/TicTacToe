@@ -1,3 +1,7 @@
 #!/bin/bash
 
+echo "---------------------------"
+echo "  Checking and testing..."
+echo "---------------------------"
+
 ./gradlew check
