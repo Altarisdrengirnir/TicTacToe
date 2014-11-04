@@ -153,7 +153,7 @@ public class TicTacToe
                             }
                         	if(!ttt.isX)
                         	{
-                        		System.out.println("X IS THE WINNER! CONGRATULATIONS MR.X");
+                        		System.out.println("X IS THE WINNER! CONGRATULATIONS MR.X - Something has changed...");
                         	}
                         	else
                         	{

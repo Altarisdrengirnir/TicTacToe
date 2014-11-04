@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.tictactoe.TicTacToeTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2014-11-04T12:57:47" hostname="i-8eae37da" time="0.032">
+<testsuite name="is.ru.tictactoe.TicTacToeTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2014-11-04T14:07:28" hostname="i-8eae37da" time="0.033">
   <properties/>
   <testcase name="testEmptyBoard" classname="is.ru.tictactoe.TicTacToeTest" time="0.004"/>
   <testcase name="testMove2" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
   <testcase name="testMove" classname="is.ru.tictactoe.TicTacToeTest" time="0.0"/>
-  <testcase name="testOverridefails" classname="is.ru.tictactoe.TicTacToeTest" time="0.0"/>
-  <testcase name="testToLargeInput" classname="is.ru.tictactoe.TicTacToeTest" time="0.0"/>
-  <testcase name="testOverride" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
+  <testcase name="testOverridefails" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
+  <testcase name="testToLargeInput" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
+  <testcase name="testOverride" classname="is.ru.tictactoe.TicTacToeTest" time="0.0"/>
   <testcase name="testCheckForWinner" classname="is.ru.tictactoe.TicTacToeTest" time="0.001"/>
   <testcase name="testMorewinners" classname="is.ru.tictactoe.TicTacToeTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
